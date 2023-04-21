@@ -1,0 +1,87 @@
+:root{
+    scroll-behavior: smooth;
+}
+
+::selection{
+    color: rgb(239, 231, 241);
+}
+img{
+    max-width: 300px;
+}
+body{
+    background-image: url(estrelas.jpg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body:fullscreen{
+    background-color: aqua;
+}
+
+.container{
+    max-width: 960px; /*largura máxima encolhe se necessário*/
+    margin:auto; /*centralizado*/
+}
+
+nav{
+    background-color: #b1b0b0c8;
+}
+
+main, section{
+    background-color: #b1b0b0c8;
+    color: #2c2228; /*cor da fonte*/
+}
+
+nav, main, section{
+    box-sizing: border-box; /*hack para contabilizar o padding na largura*/
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+/* menu */
+
+ul{
+    list-style-type: nome;
+    text-align: center;
+    margin: 0;
+    padding:0;
+}
+
+li{
+    
+    display: inline-block;
+    padding: 0 20px;
+}
+
+p{
+    text-align: justify;
+}
+
+a:link, a:visited{
+    color: rgb(22, 17, 17);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration:underline;
+    color: rgb(254, 223, 68);
+}
+
+a:active{
+    color: rgb(103, 137, 161);
+}
+
+p:first-child{
+    background-color: rgb(199, 188, 86);
+}
+/* selecionando a imagem dentro do main, sempre que usar o float precisar usar o clear caso ocorra um bug*/
+main img{
+    float: left;
+    margin: 0 25px 25px 0;
+}
+
+/* hack pós float*/
+.clear{
+    clear: both;
+}
